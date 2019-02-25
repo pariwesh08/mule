@@ -3,8 +3,8 @@
 
    <modelVersion>4.0.0</modelVersion>
    <groupId>com.mulesoft.training</groupId>
-   <artifactId>maven-project-XX</artifactId>
-   <version>1.2.0-SNAPSHOT</version>
+   <artifactId>maven-project-XX-1.3</artifactId>
+   <version>1.3.0-SNAPSHOT</version>
    <packaging>mule</packaging>
    <name>Mule Maven Demo Application</name>
 
