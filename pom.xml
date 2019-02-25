@@ -4,7 +4,7 @@
    <modelVersion>4.0.0</modelVersion>
    <groupId>com.mulesoft.training</groupId>
    <artifactId>maven-project-XX</artifactId>
-   <version>1.0.0-SNAPSHOT</version>
+   <version>1.1.0-SNAPSHOT</version>
    <packaging>mule</packaging>
    <name>Mule Maven Demo Application</name>
 
@@ -70,6 +70,26 @@
                <workerType>Micro</workerType>
                <redeploy>true</redeploy>
                <environment>Sandbox</environment>
+            </configuration>
+            <executions>
+               <execution>
+                  <id>deploy</id>
+                  <phase>deploy</phase>
+                  <goals>
+                     <goal>deploy</goal>
+                  </goals>
+               </execution>
+            </executions>
+         </plugin>
+         <plugin>
+            <groupId>org.mule.tools.maven</groupId>
+            <artifactId>mule-maven-plugin</artifactId>
+            <version>2.0</version>
+            <configuration>
+              <standaloneDeployment>
+  	            <muleHome>${mule.home}</muleHome>
+                <muleVersion>${mule.version}</muleVersion>
+  	        </standaloneDeployment>
             </configuration>
             <executions>
                <execution>
